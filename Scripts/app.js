@@ -3,8 +3,8 @@
  * @Author Javid Niftaliyev
  * Student ID: 300742916
  * @description: This is the main javascript file for the current web site.
- * Website(Azure): 
- * Website(Github): 
+ * Website(Azure): http://comp125-assign3-json.azurewebsites.net/about.html
+ * Website(Github): https://github.com/Web1017/COMP125-Assignment3-JSON-Data
  * 
  */
 //IIFE - Immediately invoked Expression 
