@@ -40,7 +40,6 @@
 
 
 
-
     function readParag() {
         xhr = new XMLHttpRequest(); // step 1 - create xhr object
         xhr.open("GET", "Scripts/paragraphs.json", true); // step 2 - open request
@@ -49,7 +48,13 @@
     }
 
 
-
+  /**
+     * displays readParag
+     * 
+     * @method init
+     * @returns {void}
+     */
+   
 
     // app entry function
     function init() {
