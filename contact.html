@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets\img\images1.jpg">
+    <title>Contact Me</title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <!--
+    <link rel="stylesheet" href="Content\css\bootstrap-theme.min.css">
+    -->
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid"> <!-- means no margin in the corner-->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-rebel fa-lg"></i> Assignment 3 - JSON Data</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><i class="fa fa-modx fa-lg"></i> Home</a></li>
+                    <li class ="active"><a href="projects.html"><i class="fa fa-globe fa-lg"></i> Projects</a></li>
+                    <li><a href="about.html"><i class="fa fa-cube fa-lg"></i> About Me</a></li>
+                    <li class = "active"><a href="contact.html"><i class="fa fa-forumbee fa-lg"aria-hidden="true"></i> Contact Me</a></li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-offset-3 col-md-6">
+                <legend>Contact Form</legend>
+          <form id = "contactForm" action=""  role="form">
+          
+          
+              <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="FirstName" class="form-control" id="firstName" placeholder="Enter First Name" required>
+              </div>
+          
+          <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="Last Name" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+              </div>
+              
+              <div class="form-group">
+                  <label for="email">Email Adress</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+              </div>
+              
+              <div class="form-group">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber" placeholder="Enter contact Number" required>
+              </div>
+              
+              <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea cols = "3" rows ="3" class="form-control" id="message" placeholder="Enter your message here" required></textarea>
+              </div>
+              
+              
+          <div class="text-right">
+               <a id="cancelButton" href="index.html" class="btn btn-warning">Cancel </a>
+               <button id="sendButton" href="index.html" class="btn btn-primary">Send </button>
+               
+           </div>  
+          </form>
+          
+          <!-- <h1>Contact Me</h1> -->
+          
+          
+
+            </p>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+
+</html>
