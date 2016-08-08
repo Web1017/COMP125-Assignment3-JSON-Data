@@ -22,15 +22,37 @@
 
             var giveInfo = JSON.parse(xhr.responseText);
             var paragInfo = giveInfo.pageText;
-            
-           
-            paragInfo.forEach(function(parag){
-                document.getElementById("paragraphOne").innerHTML= giveInfo.pageText[0].homePage;
-                document.getElementById("paragraphTwo").innerHTML = giveInfo.pageText[1].projectPage;
-                document.getElementById("paragraphThree").innerHTML = giveInfo.pageText[2].projectPage2;
-                document.getElementById("paragraphFour").innerHTML = giveInfo.pageText[3].projectPage3;
-                document.getElementById("paragraphFive").innerHTML = giveInfo.pageText[4].aboutPage;
 
+  
+            
+           // Switch function checking Document by Title to check if paragraph exists in stated page.
+            paragInfo.forEach(function(parag){
+                switch (document.title){
+
+                    case "Home Page": document.getElementById("paragraphOne").innerHTML= giveInfo.pageText[0].homePage;
+                    break; 
+
+                    case "My Project": document.getElementById("paragraphTwo").innerHTML = giveInfo.pageText[1].projectPage,
+
+                    document.getElementById("paragraphThree").innerHTML = giveInfo.pageText[2].projectPage2,
+
+                    document.getElementById("paragraphFour").innerHTML = giveInfo.pageText[3].projectPage3;
+                    break;
+
+                    case "About Me" : document.getElementById("paragraphFive").innerHTML = giveInfo.pageText[4].aboutPage;
+                    break;
+                    
+
+                    default:""
+                    break;
+
+                }
+                
+              /*  if(document.getElementById("paragraphOne")){
+                    document.getElementById("paragraphOne").innerHTML= giveInfo.pageText[0].homePage;
+                }
+                
+*/
             }, this);
 
             
